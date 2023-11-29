@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aula sobre imagens responsivas</title>
+    </head>
+    <body>
+        <h1>Imagens responsivas</h1>
+        <picture>
+            <!-- Monitor -->
+            <source media="(min-width: 600px)" 
+            srcset="./imagens/dog-desk-720.jpg 481w, 
+                ./imagens/dog-desk-960.jpg 961w, 
+                ./imagens/dog-desk-1440.jpg 1441w, 
+                ./imagens/dog-desk-1920.jpg 1921w"
+            sizes="(max-width: 480px) 321px,
+                (min-width: 481px) and (max-width: 960px) 481px,
+                (min-width: 961px) and (max-width: 1440px) 961px,
+                (min-width: 1441px) 1441px,
+                (min-width: 1921px) 1921px"/>
+ 
+            <!-- Mobile -->
+            <source srcset="./imagens/dog-mob-320.jpg 320w, 
+            ./imagens/dog-mob-480.jpg 481w, 
+            ./imagens/dog-mob-720.jpg 721w, 
+            ./imagens/dog-mob-960.jpg 961w" 
+            sizes="(max-width: 480px) 320px,
+               (min-width: 481px) and (max-width: 720px) 480px,
+               (min-width: 721px) and (max-width: 960px) 720px,
+               (min-width: 961px) 960px"/>
+           
+            <img src="./imagens/dog-desk-480.jpg" width="480" height="360" alt="Cachorro deitado ao sol">
+        </picture>
+    </body>
+</html>
